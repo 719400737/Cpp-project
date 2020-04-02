@@ -1,0 +1,10 @@
+initscr()	初始化curses库和tty
+endwin()	关闭curses并重置tty
+refresh()	刷新屏幕显示
+mvaddch(y,x,c)	在坐标(y,x)处显示字符c
+mvaddstr(y,x,str)	在坐标(y,x)处显示字符串str
+cbreak()	开启输入立即响应
+noecho()	输入不回显到屏幕
+curs_set(0)	使光标不可见
+attrset()	开启图形显示模式
+keypad(stdscr, true)	开启小键盘方向键输入捕捉支持
